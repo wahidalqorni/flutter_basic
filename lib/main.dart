@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/layout_column.dart';
 import 'package:flutter_basic/layout_container.dart';
+import 'package:flutter_basic/layout_landing.dart';
+import 'package:flutter_basic/layout_row.dart';
 
 void main() {
   runApp(BasicApp());
@@ -13,7 +16,7 @@ class BasicApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage()
+      home:LayoutLanding()
     );
   }
 }
@@ -29,7 +32,7 @@ class HomePage extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.amberAccent,
             title: const Text("Syntop Store!~"),
-            leading: const Icon(Icons.arrow_back),
+            // leading: const Icon(Icons.arrow_back),
             actions:  [
               Icon(Icons.alarm),
               Icon(Icons.photo_album),
