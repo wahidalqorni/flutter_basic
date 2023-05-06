@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/latihan1.dart';
+import 'package:flutter_basic/latihan2.dart';
 import 'package:flutter_basic/layout_container.dart';
 import 'package:flutter_basic/main.dart';
 
@@ -96,11 +98,22 @@ class LayoutLanding extends StatelessWidget {
           
             // BARIS III IMAGE
             // IMAGE dr INTERNET
-            Image.network("https://sydemy.com/wp-content/uploads/2018/10/Logo-Sydemy_Colour.png"),
+            // Image.network("https://sydemy.com/wp-content/uploads/2018/10/Logo-Sydemy_Colour.png"),
 
             // BARIS IV IMAGE
             // IMAGE dr ASSET PROJECT
-            Image.asset("assets/avaaa.jpg"),
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => LatihanSatu()));
+              },
+              child: Image.asset("assets/avaaa.jpg")),
+
+
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => LatihanDua()));
+              },
+              child: Image.asset("assets/avaaa.jpg")),
           ],
         ),
       ),
